@@ -1,3 +1,6 @@
+//Função do Algoritmo: Calcular a méria aritimética
+//Autor: Filipe Sá
+
 programa
 {
 	
@@ -20,6 +23,17 @@ programa
 		media = (nota1+nota2+nota3+nota4)/4
 
 		escreva("O aluno: " + aluno +" obteve a média: " + media)
+		//Verifica se a média é maior ou igual a 7
+		se(media>=7) {
+			escreva("\n" + "Parabéns! Você foi aprovado")
+			
+		}
+		//Caso a média seja menor que 7
+		senao{
+			escreva("\n" + "Infelizmente o aluno foi reprovado")
+		}
+
+		
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -27,7 +41,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 359; 
+ * @POSICAO-CURSOR = 538; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
