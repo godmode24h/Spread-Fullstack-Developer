@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align content</title>
+    <style>
+        .container{
+            height: 700px;
+            max-width: 300px;
+            margin: 0  auto;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;
+        }
+
+        .item{
+            background-color: orangered;
+            padding: 0 5px;
+            margin: 5px;
+            flex: 1;
+            text-align: center;
+            color: white;
+        }
+
+        .stretch{
+            align-content: stretch;
+        }
+        
+        .center{
+            align-content: center;
+        }
+
+        .flex-start{
+            align-content: flex-start;
+        }
+
+        .end{
+            align-content: flex-end;
+        }
+        
+        .space-around{
+            align-content: space-around;
+        }
+
+        .space-between{
+            align-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <p>stretch</p>
+    <div class="container stretch">
+        <div class="item">Porém eu e a minha casa serviremos ao Senhor. (Josué 24:15)</div>
+        <div class="item">Ainda que a minha mente e o meu corpo enfraqueçam, Deus é a minha força, ele é tudo o que sempre preciso. (Salmos 73:26)</div>
+        <div class="item">Espera pelo Senhor, tem bom ânimo, e fortifique-se o teu coração; espera, pois, pelo Senhor. (Salmos, 27:14)</div>
+        <div class="item">O que é nascido de Deus vence o mundo; e esta é a vitória que vence o mundo: a nossa fé. (1 João 5:4)</div>
+        <div class="item">O amor é paciente, o amor é bondoso. Não inveja, não se vangloria, não se orgulha. (1 Coríntios 13:4)</div>
+        <div class="item">Esperarei com paciência no senhor, e ele se inclinou pra mim, e ouviu o meu clamor (Salmos: 40.1)</div>
+        <div class="item">Tudo o que fizerem, façam de todo o coração, como para o Senhor, e não para os homens, (Colossenses 3:23)</div>
+    </div>
+
+    <p>center</p>
+    <div class="container center">
+        <div class="item">Porém eu e a minha casa serviremos ao Senhor. (Josué 24:15)</div>
+        <div class="item">Ainda que a minha mente e o meu corpo enfraqueçam, Deus é a minha força, ele é tudo o que sempre preciso. (Salmos 73:26)</div>
+        <div class="item">Espera pelo Senhor, tem bom ânimo, e fortifique-se o teu coração; espera, pois, pelo Senhor. (Salmos, 27:14)</div>
+        <div class="item">O que é nascido de Deus vence o mundo; e esta é a vitória que vence o mundo: a nossa fé. (1 João 5:4)</div>
+        <div class="item">O amor é paciente, o amor é bondoso. Não inveja, não se vangloria, não se orgulha. (1 Coríntios 13:4)</div>
+        <div class="item">Esperarei com paciência no senhor, e ele se inclinou pra mim, e ouviu o meu clamor (Salmos: 40.1)</div>
+        <div class="item">Tudo o que fizerem, façam de todo o coração, como para o Senhor, e não para os homens, (Colossenses 3:23)</div>
+    </div>
+
+    <p>flex-start</p>
+    <div class="container flex-start">
+        <div class="item">Porém eu e a minha casa serviremos ao Senhor. (Josué 24:15)</div>
+        <div class="item">Ainda que a minha mente e o meu corpo enfraqueçam, Deus é a minha força, ele é tudo o que sempre preciso. (Salmos 73:26)</div>
+        <div class="item">Espera pelo Senhor, tem bom ânimo, e fortifique-se o teu coração; espera, pois, pelo Senhor. (Salmos, 27:14)</div>
+        <div class="item">O que é nascido de Deus vence o mundo; e esta é a vitória que vence o mundo: a nossa fé. (1 João 5:4)</div>
+        <div class="item">O amor é paciente, o amor é bondoso. Não inveja, não se vangloria, não se orgulha. (1 Coríntios 13:4)</div>
+        <div class="item">Esperarei com paciência no senhor, e ele se inclinou pra mim, e ouviu o meu clamor (Salmos: 40.1)</div>
+        <div class="item">Tudo o que fizerem, façam de todo o coração, como para o Senhor, e não para os homens, (Colossenses 3:23)</div>
+    </div>
+
+    <p>end</p>
+    <div class="container end">
+        <div class="item">Porém eu e a minha casa serviremos ao Senhor. (Josué 24:15)</div>
+        <div class="item">Ainda que a minha mente e o meu corpo enfraqueçam, Deus é a minha força, ele é tudo o que sempre preciso. (Salmos 73:26)</div>
+        <div class="item">Espera pelo Senhor, tem bom ânimo, e fortifique-se o teu coração; espera, pois, pelo Senhor. (Salmos, 27:14)</div>
+        <div class="item">O que é nascido de Deus vence o mundo; e esta é a vitória que vence o mundo: a nossa fé. (1 João 5:4)</div>
+        <div class="item">O amor é paciente, o amor é bondoso. Não inveja, não se vangloria, não se orgulha. (1 Coríntios 13:4)</div>
+        <div class="item">Esperarei com paciência no senhor, e ele se inclinou pra mim, e ouviu o meu clamor (Salmos: 40.1)</div>
+        <div class="item">Tudo o que fizerem, façam de todo o coração, como para o Senhor, e não para os homens, (Colossenses 3:23)</div>
+    </div>
+
+    <p>space-around</p>
+    <div class="container space-around">
+        <div class="item">Porém eu e a minha casa serviremos ao Senhor. (Josué 24:15)</div>
+        <div class="item">Ainda que a minha mente e o meu corpo enfraqueçam, Deus é a minha força, ele é tudo o que sempre preciso. (Salmos 73:26)</div>
+        <div class="item">Espera pelo Senhor, tem bom ânimo, e fortifique-se o teu coração; espera, pois, pelo Senhor. (Salmos, 27:14)</div>
+        <div class="item">O que é nascido de Deus vence o mundo; e esta é a vitória que vence o mundo: a nossa fé. (1 João 5:4)</div>
+        <div class="item">O amor é paciente, o amor é bondoso. Não inveja, não se vangloria, não se orgulha. (1 Coríntios 13:4)</div>
+        <div class="item">Esperarei com paciência no senhor, e ele se inclinou pra mim, e ouviu o meu clamor (Salmos: 40.1)</div>
+        <div class="item">Tudo o que fizerem, façam de todo o coração, como para o Senhor, e não para os homens, (Colossenses 3:23)</div>
+    </div>
+
+    <p>space-between</p>
+    <div class="container space-between">
+        <div class="item">Porém eu e a minha casa serviremos ao Senhor. (Josué 24:15)</div>
+        <div class="item">Ainda que a minha mente e o meu corpo enfraqueçam, Deus é a minha força, ele é tudo o que sempre preciso. (Salmos 73:26)</div>
+        <div class="item">Espera pelo Senhor, tem bom ânimo, e fortifique-se o teu coração; espera, pois, pelo Senhor. (Salmos, 27:14)</div>
+        <div class="item">O que é nascido de Deus vence o mundo; e esta é a vitória que vence o mundo: a nossa fé. (1 João 5:4)</div>
+        <div class="item">O amor é paciente, o amor é bondoso. Não inveja, não se vangloria, não se orgulha. (1 Coríntios 13:4)</div>
+        <div class="item">Esperarei com paciência no senhor, e ele se inclinou pra mim, e ouviu o meu clamor (Salmos: 40.1)</div>
+        <div class="item">Tudo o que fizerem, façam de todo o coração, como para o Senhor, e não para os homens, (Colossenses 3:23)</div>
+    </div>
+</body>
+</html>
